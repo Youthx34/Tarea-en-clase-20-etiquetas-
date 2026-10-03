@@ -1,0 +1,99 @@
+:root {
+  --tinta: #1c2b2a;
+  --aurora: #1f7a6d;
+  --amanecer: #f2b632;
+  --leche: #f4f7f5;
+  --linea: #c9d6d1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--leche);
+  color: var(--tinta);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--aurora);
+  color: #fff;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4 { font-family: Georgia, serif; line-height: 1.2; }
+h1 { font-size: 2.6rem; margin: 0; }
+header p { margin: 0.4rem 0 1rem; }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a { color: #fff; font-weight: 600; text-decoration: none; }
+nav a:hover, nav a:focus { border-bottom: 2px solid var(--amanecer); }
+
+main { max-width: 760px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+section, aside { margin-bottom: 2rem; }
+
+figure { margin: 0 0 1rem; text-align: center; }
+figcaption { font-size: 0.9rem; color: var(--aurora); }
+
+mark { background: var(--amanecer); padding: 0 0.25rem; }
+
+.precio { color: var(--aurora); font-weight: 700; margin-left: 0.5rem; }
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--amanecer);
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+hr { border: 0; border-top: 2px dashed var(--linea); margin: 2rem 0; }
+
+.tabla-scroll { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; }
+caption { padding: 0.5rem; font-weight: 700; text-align: left; }
+th, td { padding: 0.5rem 0.75rem; border: 1px solid var(--linea); text-align: left; }
+th { background: var(--tinta); color: #fff; }
+tbody tr:nth-child(even) { background: var(--leche); }
+code { color: var(--aurora); font-weight: 700; }
+
+form { display: grid; gap: 0.4rem; }
+input, select, textarea {
+  padding: 0.6rem;
+  border: 1px solid var(--linea);
+  border-radius: 4px;
+  font: inherit;
+}
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: 3px solid var(--amanecer);
+}
+
+button {
+  margin-top: 0.8rem;
+  padding: 0.7rem;
+  background: var(--aurora);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover { background: var(--tinta); }
+
+aside { padding: 1rem; background: #fff; border: 1px solid var(--linea); }
+
+footer { background: var(--tinta); color: #fff; text-align: center; padding: 1rem; }
+footer p { margin: 0; }
