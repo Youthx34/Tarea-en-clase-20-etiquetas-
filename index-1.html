@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Aurora | Etiquetas HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Café Aurora</h1>
+    <p>Café de especialidad y guía de etiquetas HTML</p>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#etiquetas">Etiquetas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Nuestro menú</h2>
+      <article>
+        <h3>Bebidas de hoy</h3>
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E" alt="Taza de café humeante" width="120" height="120">
+          <figcaption>Nuestro espresso, tostado cada mañana.</figcaption>
+        </figure>
+        <p>Preparamos el café con <strong>granos de Chiapas</strong> y lo servimos recién molido. Hoy hay 2x1 en capuchinos.</p>
+        <ul>
+          <li>Espresso <span class="precio">$35</span></li>
+          <li>Capuchino <span class="precio">$55</span></li>
+          <li>Café de olla <span class="precio">$45</span></li>
+        </ul>
+        <h4>Cómo preparamos el café de olla</h4>
+        <ol>
+          <li>Hervir el agua con canela y piloncillo.</li>
+          <li>Agregar el café molido.</li>
+          <li>Reposar cinco minutos y colar.</li>
+        </ol>
+        <blockquote>El buen café se sirve caliente y se comparte con alguien.</blockquote>
+      </article>
+    </section>
+
+
+    <section id="etiquetas">
+      <h2>Etiquetas HTML más utilizadas</h2>
+      <p>Esta tabla resume las etiquetas de esta página y para qué sirve cada una.</p>
+      <div class="tabla-scroll">
+        <table>
+          <caption>Guía rápida de etiquetas</caption>
+          <thead>
+            <tr><th>Etiqueta</th><th>Para qué sirve</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Indica que el documento es HTML5.</td></tr>
+            <tr><td><code>&lt;html&gt;</code></td><td>Contiene toda la página; <code>lang</code> define el idioma.</td></tr>
+            <tr><td><code>&lt;head&gt;</code></td><td>Información que no se ve: título, estilos, codificación.</td></tr>
+            <tr><td><code>&lt;meta&gt;</code></td><td>Datos de la página: caracteres (UTF-8) y adaptación al celular.</td></tr>
+            <tr><td><code>&lt;title&gt;</code></td><td>Título que aparece en la pestaña del navegador.</td></tr>
+            <tr><td><code>&lt;link&gt;</code></td><td>Conecta archivos externos, como la hoja CSS.</td></tr>
+            <tr><td><code>&lt;body&gt;</code></td><td>Todo el contenido visible de la página.</td></tr>
+            <tr><td><code>&lt;header&gt;</code></td><td>Encabezado de la página o de una sección.</td></tr>
+            <tr><td><code>&lt;nav&gt;</code></td><td>Bloque de enlaces de navegación.</td></tr>
+            <tr><td><code>&lt;main&gt;</code></td><td>Contenido principal de la página.</td></tr>
+            <tr><td><code>&lt;section&gt;</code></td><td>Agrupa contenido de un mismo tema.</td></tr>
+            <tr><td><code>&lt;article&gt;</code></td><td>Contenido independiente, como una nota o publicación.</td></tr>
+            <tr><td><code>&lt;aside&gt;</code></td><td>Contenido secundario o complementario.</td></tr>
+            <tr><td><code>&lt;footer&gt;</code></td><td>Pie de página: autor, derechos, contacto.</td></tr>
+            <tr><td><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></td><td>Títulos y subtítulos; h1 es el más importante.</td></tr>
+            <tr><td><code>&lt;p&gt;</code></td><td>Párrafo de texto.</td></tr>
+            <tr><td><code>&lt;a&gt;</code></td><td>Enlace a otra página o a una sección (atributo <code>href</code>).</td></tr>
+            <tr><td><code>&lt;img&gt;</code></td><td>Inserta una imagen; <code>alt</code> describe la imagen.</td></tr>
+            <tr><td><code>&lt;figure&gt;</code> y <code>&lt;figcaption&gt;</code></td><td>Imagen con su pie de foto.</td></tr>
+            <tr><td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td><td>Lista con viñetas, lista numerada y cada elemento de la lista.</td></tr>
+            <tr><td><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></td><td>Tabla, fila, celda de encabezado y celda de datos.</td></tr>
+            <tr><td><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;caption&gt;</code></td><td>Encabezado, cuerpo y título de la tabla.</td></tr>
+            <tr><td><code>&lt;strong&gt;</code></td><td>Texto importante (negrita).</td></tr>
+            <tr><td><code>&lt;em&gt;</code></td><td>Texto con énfasis (cursiva).</td></tr>
+            <tr><td><code>&lt;mark&gt;</code></td><td>Resalta texto, como un marcatextos.</td></tr>
+            <tr><td><code>&lt;small&gt;</code></td><td>Texto pequeño, como notas legales.</td></tr>
+            <tr><td><code>&lt;br&gt;</code></td><td>Salto de línea.</td></tr>
+            <tr><td><code>&lt;hr&gt;</code></td><td>Línea horizontal que separa contenido.</td></tr>
+            <tr><td><code>&lt;blockquote&gt;</code></td><td>Cita textual.</td></tr>
+            <tr><td><code>&lt;code&gt;</code></td><td>Muestra fragmentos de código.</td></tr>
+            <tr><td><code>&lt;div&gt;</code></td><td>Contenedor genérico para agrupar y dar estilo.</td></tr>
+            <tr><td><code>&lt;span&gt;</code></td><td>Contenedor genérico en línea, dentro de un texto.</td></tr>
+            <tr><td><code>&lt;form&gt;</code></td><td>Formulario para enviar datos.</td></tr>
+            <tr><td><code>&lt;label&gt;</code></td><td>Nombre de un campo del formulario.</td></tr>
+            <tr><td><code>&lt;input&gt;</code></td><td>Campo de entrada: texto, correo, fecha, etc.</td></tr>
+            <tr><td><code>&lt;select&gt;</code> y <code>&lt;option&gt;</code></td><td>Lista desplegable y sus opciones.</td></tr>
+            <tr><td><code>&lt;textarea&gt;</code></td><td>Campo para texto largo.</td></tr>
+            <tr><td><code>&lt;button&gt;</code></td><td>Botón, por ejemplo para enviar el formulario.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Reserva tu mesa</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+        <label for="personas">Personas</label>
+        <select id="personas" name="personas">
+          <option>1 a 2</option>
+          <option>3 a 4</option>
+          <option>5 o más</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <aside>
+      <h3>Dirección</h3>
+      <p>
+        Calle Luna 12
+        Ciudad de México
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2026 Café Aurora. Proyecto escolar de HTML y CSS.</p>
+  </footer>
+</body>
+</html>
